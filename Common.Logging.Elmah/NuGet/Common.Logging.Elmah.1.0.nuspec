@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Common.Logging.Elmah</id>
+    <version>1.0</version>
+    <title />
+    <authors>Wade</authors>
+    <owners />
+    <projectUrl>http://www.dotblogs.com.tw/wadehuang36/archive/2011/10/06/Common-Logging-Elmah.aspx</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Common.Logging library bindings for Elmah logging framework.</description>
+    <tags>Common.Logging,Elmah</tags>
+    <dependencies>
+      <dependency id="Common.Logging" version="2.0.0" />
+      <dependency id="elmah" version="1.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\NuGet\app.config.transform" target="content\app.config.transform" />
+    <file src="..\NuGet\web.config.transform" target="content\web.config.transform" />
+    <file src="..\bin\Release\Common.Logging.Elmah.dll" target="lib\net20\Common.Logging.Elmah.dll" />
+  </files>
+</package>
