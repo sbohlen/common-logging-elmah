@@ -100,7 +100,7 @@ namespace Common.Logging.Elmah
         /// <param name="exception">the exception to log (may be null)</param>
         protected override void WriteInternal(LogLevel logLevel, object message, Exception exception)
         {
-            if (logLevel > minLevel)
+            if (logLevel >= minLevel)
             {
                 Error error;
                 if (exception == null)

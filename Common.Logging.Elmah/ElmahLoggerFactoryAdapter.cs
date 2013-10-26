@@ -21,7 +21,7 @@ namespace Common.Logging.Elmah
         {
             if (properties != null)
             {
-                var value = properties["MixLevel"];
+                var value = properties["MinLevel"];
                 if (!string.IsNullOrEmpty(value))
                 {
                     minLevel = (LogLevel)Enum.Parse(typeof(LogLevel), value, true);
